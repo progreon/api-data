@@ -38,7 +38,7 @@ git checkout "$BRANCH_NAME"
 pip install -r requirements.txt
 rm -r ./data
 ditto clone --src-url http://localhost/ --dest-dir ./data
-ditto analyze --api-dir ./data/api --schema-dir ./data/schema
+ditto analyze --data-dir ./data
 
 # commit and push
 git add data
